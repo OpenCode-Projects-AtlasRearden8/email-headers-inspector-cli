@@ -1,0 +1,37 @@
+Return-Path: <boy@lists.example.org>
+Authentication-Results: examplemail.example.net;
+	spf=softfail smtp.mailfrom=hotmail.com;
+	dkim=none;
+	dmarc=none header.from=hotmail.com
+Received: from examplemail.examplenet ([10.1.1.1])
+	by inbox.example.net with LMTP id cde345
+	for <you@example.net>; Tue, 02 Jun 2026 11:00:05 +0000
+Received: from club.example.org ([192.0.2.53])
+	by examplemail.example.net with ESMTPS; Tue, 02 Jun 2026 10:59:50 +0000
+Received: from outr.example.org
+	by club.example.org with local (Exim 4.96); Tue, 02 Jun 2026 10:59:32 +0000
+Received: from [161.8.22.4] (helo=laptop.local)
+	by outr.example.org with esmtpsa id qxyz-01
+	for <chess-club@lists.example.org>; Tue, 02 Jun 2026 10:58:40 +0000
+Received: from mail.hotmail.com ([65.52.5.220])
+	by outr.example.org with esmtp; Tue, 02 Jun 2026 10:57:10 +0000
+From: Sam Sender <sam.sender@hotmail.com>
+Reply-To: chess-club@lists.example.org
+To: chess-club@lists.example.org
+Subject: [chess-club] June newsletter draft
+Date: Tue, 02 Jun 2026 10:56:00 +0000
+Message-ID: <club-june-889@lists.example.org>
+List-Id: Chess Club <chess-club.lists.example.org>
+Content-Type: multipart/mixed; boundary="=_boundary42"
+
+--=_boundary42
+Content-Type: text/plain; charset="utf-8"
+
+Club newsletter attached. Reply to the club address, not the sender.
+--=_boundary42
+Content-Type: application/pdf; name="club-news-june.pdf"
+Content-Disposition: attachment; filename="club-news-june.pdf"
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQKJcTl8uXrp/Og0MTGjCA=
+--=_boundary42--

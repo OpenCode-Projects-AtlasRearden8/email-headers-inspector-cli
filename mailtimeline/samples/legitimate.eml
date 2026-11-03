@@ -1,0 +1,28 @@
+Return-Path: <bounce@newsletter.example.com>
+Authentication-Results: mx.provider.example.com;
+	spf=pass (sender IP is 198.51.100.10) smtp.mailfrom=newsletter.example.com;
+	dkim=pass header.d=newsletter.example.com header.s=s2026 header.b=abcdwxyz;
+	dmarc=pass (p=reject dis=none) header.from=newsletter.example.com
+Received: from mx.provider.example.com ([10.0.0.2])
+	by mailbox.provider.example.com with LMTP id abc123
+	for <you@example.net>; Mon, 01 Jun 2026 14:00:12 -0400
+Received: from mail.newsletter.example.com ([198.51.100.10])
+	by mx.provider.example.com with ESMTPS id relay1
+	for <you@example.net>; Mon, 01 Jun 2026 14:00:08 -0400
+Received: from origin.newsletter.example.com ([198.51.100.9])
+	by mail.newsletter.example.com with esmtp id betch2-01
+	for <you@example.net>; Mon, 01 Jun 2026 13:58:30 -0400
+DKIM-Signature: v=1; a=rsa-sha256; d=newsletter.example.com; s=s2026;
+	c=relaxed/relaxed; q=dns/txt; t=1748712800;
+	bh=base64bodyhash.sequence==;
+	b=base64signature.sequence==
+From: Example Weekly <digest@newsletter.example.com>
+To: you@example.net
+Subject: This week in Example
+Date: Mon, 01 Jun 2026 13:58:00 -0400
+Message-ID: <weekly-2026-06-01.001@origin.newsletter.example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+List-Id: Example Weekly <weekly.newsletter.example.com>
+
+Hi! Here is your weekly digest body.

@@ -1,0 +1,22 @@
+Return-Path: <bounce@mailer.paypa1-account-verify.click>
+Authentication-Results: mx.provider.example.com;
+	spf=none smtp.mailfrom=mailer.paypa1-account-verify.click;
+	dkim=none;
+	dmarc=softfail (p=none) header.from=paypal.com
+Received: from mx.provider.example.com ([10.0.0.2])
+	by mailbox.provider.example.com with LMTP id jkl012
+	for <you@example.net>; Mon, 01 Jun 2026 09:30:45 -0400
+Received: from unknown-host ([203.0.113.77])
+	by mx.provider.example.com with ESMTP id catchall
+	for <you@example.net>; Mon, 01 Jun 2026 09:30:40 -0400
+From: "PayPal Security Team" <alerts@paypa1-account-verify.click>
+Reply-To: security.reply-desk@confirm-you-account.click
+To: you@example.net
+Subject: URGENT: Your account is limited - confirm your identity (Case #99177)
+Date: Mon, 01 Jun 2026 09:29:00 -0400
+Message-ID: <20260601-99177-0001@paypa1-account-verify.click>
+X-Mailer: BulkSender 9.1
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><body><p>Click here to restore access. Your wallet is HOLD for 24 hours.</p></body></html>
